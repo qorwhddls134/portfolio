@@ -201,6 +201,12 @@
     border-radius: 50px;
     padding: 7px 55px 7px 25px;
     position: relative;
+    transition: 0.3s;
+}
+.ls .ls_wrap .txt a:hover {
+    border-color: #182434;
+    background-color: #182434;
+    color: #fff;
 }
 .ls .ls_wrap .txt a::after {
     content: "";
@@ -209,9 +215,13 @@
     top: 10px;
     width: 20px;
     height: 20px;
+    transition: 0.3s;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.ls .ls_wrap .txt a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .ls .ls_wrap .txt ul {
     margin-top: 100px;
@@ -235,11 +245,6 @@
     object-fit: cover;
 }
 
-.britz {
-    background-image: url(../images/main/britz_bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-}
 .britz .header {
     position: absolute;
     left: 50%;
@@ -287,6 +292,12 @@
     border-radius: 50px;
     padding: 7px 55px 7px 25px;
     position: relative;
+    transition: 0.3s;
+}
+.britz .britz_wrap .txt a:hover {
+    border-color: #182434;
+    background-color: #182434;
+    color: #fff;
 }
 .britz .britz_wrap .txt a::after {
     content: "";
@@ -295,9 +306,13 @@
     top: 10px;
     width: 20px;
     height: 20px;
+    transition: 0.3s;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.britz .britz_wrap .txt a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .britz .britz_wrap .txt ul {
     margin-top: 100px;
@@ -310,6 +325,16 @@
 .britz .britz_wrap .txt ul li span {
     display: inline-block;
     width: 60px;
+}
+.britz .britz_wrap .photo {
+    width: 618px;
+    height: 437px;
+    margin: 100px 0 0 0;
+}
+.britz .britz_wrap .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cju .header {
@@ -359,6 +384,12 @@
     border-radius: 50px;
     padding: 7px 55px 7px 25px;
     position: relative;
+    transition: 0.3s;
+}
+.cju .cju_wrap .txt a:hover {
+    border-color: #182434;
+    background-color: #182434;
+    color: #fff;
 }
 .cju .cju_wrap .txt a::after {
     content: "";
@@ -367,9 +398,13 @@
     top: 10px;
     width: 20px;
     height: 20px;
+    transition: 0.3s;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%231D1D1D'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.cju .cju_wrap .txt a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_27_58' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_27_58)'%3E%3Cpath d='M13.4537 6.50313L5.67643 14.2725C5.56101 14.3878 5.41601 14.4441 5.24143 14.4415C5.0667 14.4388 4.92163 14.3798 4.80622 14.2644C4.69094 14.149 4.6333 14.0053 4.6333 13.8333C4.6333 13.6614 4.69094 13.5177 4.80622 13.4023L12.5756 5.625H5.74538C5.5683 5.625 5.41983 5.56507 5.29997 5.44521C5.18025 5.32535 5.12038 5.17687 5.12038 4.99979C5.12038 4.82257 5.18025 4.67417 5.29997 4.55458C5.41983 4.43486 5.5683 4.375 5.74538 4.375H13.9504C14.1639 4.375 14.3427 4.44715 14.4871 4.59146C14.6315 4.7359 14.7037 4.91479 14.7037 5.12813V13.3333C14.7037 13.5104 14.6438 13.6588 14.5239 13.7785C14.4041 13.8984 14.2556 13.9583 14.0785 13.9583C13.9013 13.9583 13.7528 13.8984 13.6331 13.7785C13.5135 13.6588 13.4537 13.5104 13.4537 13.3333V6.50313Z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 .cju .cju_wrap .txt ul {
     margin-top: 100px;
@@ -437,16 +472,13 @@
     left: 20px;
 }
 #fp-nav{
-    top: 50%;   /* ?????? */
+    top: 50%;
 }
 #fp-nav ul li{
     width: auto;
     height: auto;
     margin: 8px 0;
     padding: 0 0 0 20px;
-}
-#fp-nav ul li:last-child{
-    display: none;  /* 마지막 footer 숨김 */
 }
 #fp-nav ul li a{
     position: absolute; /* li */
@@ -489,7 +521,7 @@
 }
 /***** //마우스를 오버하거나 현재 선택된 메뉴 end *****/
 
-#fp-nav ul li .fp-tooltip{  /* absolute xxx - 공간을 차지해야해서 */
+#fp-nav ul li .fp-tooltip{
     position: relative;
     top: auto;
     font-size: 17px;
@@ -539,4 +571,26 @@ body.bg_b #fp-nav ul li:hover a::before{
 body.bg_b #fp-nav ul li a.active::after,
 body.bg_b #fp-nav ul li:hover a::after{
     background-color: #fff;
+}
+/****** 이미지에 커서 올릴때 ******/
+.cursor { 
+	position: absolute;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+	pointer-events: none;
+	display:none; 
+}
+.cursor.on {
+	display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #182434;
+    color: #fff;
+}
+.popup {
+	cursor: none !important;
 }

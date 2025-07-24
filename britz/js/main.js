@@ -18,8 +18,7 @@ $(document).ready(function(){
             clipSize = "circle(100dvh)";
             fontSize = "40px";
         }
-    
-        // 타임라인 생성
+
         const company_typo = gsap.timeline({
             scrollTrigger: {
                 trigger: ".visual .circle",
@@ -57,20 +56,17 @@ $(document).ready(function(){
 
     scroll_chk()
     resize_chk()
-    //photo_resize()
     txt_resize()
 
     $(window).scroll(function() {
         //스크롤 할때 마다 계속
         scroll_chk()
-        //photo_resize()
         txt_resize()
     })
 
     $(window).resize(function() {
         //브라우저가 리자이즈 될때마다
         resize_chk()
-        // photo_resize()
     })
 
     function scroll_chk() {
@@ -132,8 +128,7 @@ $(document).ready(function(){
     gsap.to(".britz .photo", {
         width: "100%",
         height: "100%",
-        yPercent: -20, // 위로 30% 이동
-        // y: -20,
+        yPercent: -20,
         ease: "none",
         scrollTrigger: {
             trigger: ".britz .photo",
@@ -204,22 +199,22 @@ $(document).ready(function(){
 
     /*************** business : start ***************/
 
-    let pageWrapper = document.querySelector(".business_box");/* 홈페이지 콘텐츠 전체를 감싸는 요소, 만약 .list로 준다면 화면에 list만 꽉차게됨. */
-    let items = document.querySelector(".business .list ul");/* flex를 준 요소 */
-    let localItems = gsap.utils.toArray(".business .list ul li");/* 좌우로 배치될 각각의 요소 */
+    let pageWrapper = document.querySelector(".business_box");
+    let items = document.querySelector(".business .list ul");
+    let localItems = gsap.utils.toArray(".business .list ul li");
     let mm = gsap.matchMedia();
     let distance = () => {
         let lastItemBounds = localItems[localItems.length-1].getBoundingClientRect(),
             containerBounds = items.getBoundingClientRect();
         return Math.max(0, lastItemBounds.right - containerBounds.right);
     };
-    mm.add("(min-width: 769px)", () => {  /* 769px 이상에서만 작동 - 모든 사이즈에서 서비스되려면 mm.add를 삭제하면 됨. */
+    mm.add("(min-width: 769px)", () => {
         gsap.to(localItems, {
             x: () => -distance(),
             ease: "none",
             scrollTrigger: {
                 trigger: items,
-                start: "center center", /* 좌우로 스크롤 될 동안의 위치, top top 상단에 고정, top 20% 상단에서 20% 떨어져서 */
+                start: "center center",
                 pinnedContainer: pageWrapper,
                 end: () => "+=" + distance(),
                 pin: pageWrapper,
@@ -235,7 +230,6 @@ $(document).ready(function(){
 
     gsap.set('.product .tit_wrap .tit', { scale: 3 });
 
-    // 2. sticky 설정: 첫 번째 타이틀 고정
     ScrollTrigger.create({
         trigger: ".product .tit_wrap",
         start: "top top",
@@ -246,7 +240,6 @@ $(document).ready(function(){
         // markers: true,
     });
 
-    // 3. 스크롤 시 scale 줄이기 애니메이션
     gsap.to('.product .tit_wrap .tit', {
         scale: 1,
         scrollTrigger: {
@@ -260,7 +253,7 @@ $(document).ready(function(){
     gsap.to('.product .tit_wrap .tit h2', {
         color: 'rgba(255,255,255,0.6)',
         scrollTrigger: {
-          trigger: '.product .pr_wrap', // 배경 타이틀 영역에 진입하면
+          trigger: '.product .pr_wrap',
           start: 'top center',
           end: 'top center',
           scrub: 1,
@@ -269,7 +262,6 @@ $(document).ready(function(){
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // 대상 요소들을 배열로 처리
     const elements = document.querySelectorAll('.prbx');
 
     elements.forEach((el, index) => {

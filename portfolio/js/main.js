@@ -27,4 +27,11 @@ $(document).ready(function() {
 		responsiveWidth: 1025, /* fullpage를 적용시키지 않을 모바일 사이즈 (768부터 모바일) */
         responsiveHeight: 700   /* 브라우저 높이가 700이하로 줄면 fullpage 안함 */
 	});
+	$(window).on('scroll mousemove', function(e){  /* html cursor가 마우스 포인터를 따라다니게 하는 값 */
+		$('.cursor').css('left', e.pageX + 'px');
+		$('.cursor').css('top', e.pageY + 'px');
+	});
+	$('.popup').hover(function(){ /* 특정한 요소에 마우스를 올렸을때만 on 클래스 주기 */
+		$('.cursor').toggleClass('on');
+	});
 })
