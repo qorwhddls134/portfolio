@@ -17,10 +17,10 @@ $(document).ready(function(){
         //effect: "fade", /* fade 효과 */
         loop: true,
         pagination: {
-            el: '.visual .swiper-pagination', /* 해당 요소의 class명 */
+            el: '.visual .swiper-pagination',
             clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
             // type: 'fraction',  /* type fraction을 주면 paging이 숫자로 표시됨 */
-            renderBullet: function (index, className) {   /* paging에 특정 코드 넣기 */
+            renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
         },
@@ -144,7 +144,7 @@ $(document).ready(function(){
     
     /*********************** news swiper : start ************************/
 
-    const news_swiper = new Swiper('.news .swiper', { /* 팝업을 감싼는 요소의 class명 */
+    const news_swiper = new Swiper('.news .swiper', {
         slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
         spaceBetween: 16, /* 팝업과 팝업 사이 여백 */
         breakpoints: {

@@ -21,7 +21,7 @@ $(document).ready(function(){
     resize_chk()
 
     /****************** pc header 오버 *******************/
-    $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseenter',function() {
+    $('header .gnb .gnb_wrap ul.depth1 > li').on('mouseenter focusin',function() {
         if (device_status == 'pc') {
             $('header').addClass('menu_over')
             $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
@@ -30,6 +30,9 @@ $(document).ready(function(){
     })
     $('header').on('mouseleave',function() {
         $('header').removeClass('menu_over')
+        $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
+    })
+    $('header .gnb .gnb_wrap ul.depth1 > li > ul.depth2').on('mouseleave focusout', function() {
         $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('over')
     })
 
